@@ -140,3 +140,9 @@ To https://github.com/joonblee/cern-cms.git
 ```
 
 ### Now the changes are uploaded
+
+## 403 error
+```
+git remote set-url origin https://<username>@github.com/<username>/<repo-name>.git
+```
+Try to push again
