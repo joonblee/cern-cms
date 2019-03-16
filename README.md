@@ -4,6 +4,8 @@
 ```
 _command_:~/git-dir$ git init
 Initialized empty Git repository in /home/joonbinlee/git-dir/.git/
+```
+```
 _command_:~/git-dir$ ls -a
 .  ..  .git
 ```
@@ -11,7 +13,11 @@ _command_:~/git-dir$ ls -a
 ## config: update my user name and email
 ```
 _command_:~/git-dir$ git config user.name joonblee
+```
+```
 _command_:~/git-dir$ git config user.email joon.bin.lee@cern.ch
+```
+```
 _command_:~/git-dir$ vi .git/config
 ```
 user name and email are updated
@@ -46,6 +52,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 ```
 _command_:~/git-dir$ cd cern-cms/
+```
+```
 _command_:~/git-dir/cern-cms$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -99,6 +107,11 @@ Changes to be committed:
         modified:   README.md
 ```
 
+## remove: remove a file
+```
+_command_:~/git-dir/cern-cms$ git rm -r --cached ~/<repo_name>/<file_name>
+```
+
 ## commit: confirm modifications to add in the online repository
 ```
 _command_:~/git-dir/cern-cms$ git commit -m "modify README.md"
@@ -126,4 +139,4 @@ To https://github.com/joonblee/cern-cms.git
    a4f2071..4142741  master -> master
 ```
 
-### Now it's uploaded
+### Now the changes are uploaded
