@@ -162,3 +162,20 @@ $ git commit -m "First commit"
 $ git remote add origin https://github.com/joonblee/<repository_name>.git
 $ git push -u origin master
 ```
+
+
+# Re-update (modified content, untracked content) files
+Check if you have any untracked content.
+```
+(After git init & config)
+$ git status
+      modified:   <file_name> (modified content, untracked content)
+```
+
+Re-update this untracked content.
+```
+$ git rm -rf --cached <file_name>
+$ git add <file_name>
+$ git commit -m "reupdate <file_name>"
+$ git push origin master
+```
