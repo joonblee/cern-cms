@@ -146,3 +146,19 @@ To https://github.com/joonblee/cern-cms.git
 git remote set-url origin https://<username>@github.com/<username>/<repo-name>.git
 ```
 Try to push again
+
+
+# Write new repository
+
+### 1) Make new repository in github homepage
+
+### 2) Merge your local file into the git
+```
+$ git init
+$ git config user.name <user_name>
+$ git config user.email <full_email_address>
+$ git add .
+$ git commit -m "First commit"
+$ git remote add origin https://github.com/joonblee/<repository_name>.git
+$ git push -u origin master
+```
